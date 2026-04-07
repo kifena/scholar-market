@@ -1,0 +1,23 @@
+{
+  "overview": "A research paper marketplace landing page connecting student researchers with publishers. Students upload original research papers with keywords and tags; publishers discover curated work and purchase rights to transform it into newsletters, articles, posts, and more via AI.",
+  "features": [
+    "Hero section with elegant brown-gold-beige-white-black palette",
+    "Students value section highlighting recognition and payment for academic work",
+    "Publishers value section showcasing AI-powered content transformation",
+    "Waitlist signup form with email and user type (student/publisher)",
+    "Persistent waitlist backend storage",
+    "Minimalistic, stylishly academic typography with light Jakarta Sans font",
+    "Fully responsive design — mobile and desktop"
+  ],
+  "category": "marketplace",
+  "tags": [
+    "marketplace",
+    "research",
+    "academic",
+    "landing-page",
+    "waitlist",
+    "publishing",
+    "ai"
+  ],
+  "last_updated": "2026-04-07T17:10:15.653Z"
+}

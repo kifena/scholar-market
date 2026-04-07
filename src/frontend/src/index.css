@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Plus Jakarta Sans";
+    --font-body: "Plus Jakarta Sans";
+    --font-mono: monospace;
+    --radius: 0.5rem;
+
+    /* Light theme — off-white background, warm brown text */
+    --background: 0.985 0.004 56.72;
+    --foreground: 0.18 0.018 56.72;
+    --card: 0.97 0.006 56.72;
+    --card-foreground: 0.18 0.018 56.72;
+    --popover: 0.97 0.006 56.72;
+    --popover-foreground: 0.18 0.018 56.72;
+
+    --primary: 0.38 0.088 56.72;
+    --primary-foreground: 0.985 0.004 56.72;
+
+    --secondary: 0.72 0.082 56.72;
+    --secondary-foreground: 0.18 0.018 56.72;
+
+    --muted: 0.93 0.007 56.72;
+    --muted-foreground: 0.52 0.014 56.72;
+
+    --accent: 0.6 0.092 56.72;
+    --accent-foreground: 0.985 0.004 56.72;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.006 56.72;
+    --input: 0.88 0.006 56.72;
+    --ring: 0.38 0.088 56.72;
+
+    /* Hero — dark near-black brown */
+    --hero-bg: 0.14 0.018 56.72;
+    --hero-fg: 0.93 0.007 56.72;
+    --hero-muted: 0.62 0.022 56.72;
+    --gold: 0.72 0.093 56.72;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body), sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display), sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-body), sans-serif;
+  }
+
+  .text-light {
+    font-weight: 200;
+  }
+
+  .text-lighter {
+    font-weight: 300;
+  }
+
+  .text-gold {
+    color: oklch(var(--gold));
+  }
+
+  .bg-hero {
+    background-color: oklch(var(--hero-bg));
+    color: oklch(var(--hero-fg));
+  }
+
+  .text-hero-muted {
+    color: oklch(var(--hero-muted));
+  }
+
+  .border-gold {
+    border-color: oklch(var(--gold));
+  }
+
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .section-divider {
+    border-top: 1px solid oklch(var(--border));
+  }
+
+  /* Letterpress rule */
+  .rule-gold {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      oklch(var(--gold) / 0.5),
+      transparent
+    );
+  }
+}
